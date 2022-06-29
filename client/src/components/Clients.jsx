@@ -9,6 +9,8 @@ function Clients() {
     if (error) return <p>Error...</p>
     return (<>
         {!loading && !error && (
+            <div className="container">
+            <h3>Client list</h3>
             <table className="table table-hover">
                 <thead>
                     <tr>
@@ -25,6 +27,7 @@ function Clients() {
                    })}
                 </tbody>
             </table>
+            </div>
         )}
     </>
     )
